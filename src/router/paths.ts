@@ -1,0 +1,5 @@
+export enum HOME_STACK_PATHS {
+  HOME = 'HOME',
+  SETTINGS = 'SETTINGS',
+  FAVORITES = 'FAVORITES',
+}

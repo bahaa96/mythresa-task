@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "wesbos",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "singleQuote": true,
+        "printWidth": 80,
+        //below line only for window users facing CLRF and eslint/prettier error
+        // non window users feel free to delete it
+        "endOfLine": "auto"
+      }
+    ],
+    "simple-import-sort/sort": "error",
+    "sort-imports": "off",
+    "import/order": "off",
+    "react/jsx-props-no-spreading": 0,
+    "react/prop-types": 0,
+    "react/jsx-curly-newline": "off",
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-curly-spacing": 0,
+    "comma-dangle": "off",
+    "arrow-body-style": [
+      "error",
+      "always"
+    ],
+    "@typescript-eslint/comma-dangle": [
+      "error"
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "variables": false
+      }
+    ]
+  }
+}
